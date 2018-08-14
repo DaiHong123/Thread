@@ -17,5 +17,7 @@ public class ThreadPoolDemo {
             poolExecutor.submit(()-> System.out.println("i:"+index+"executorService"));
         }
         poolExecutor.shutdown();
+
     }
+
 }
