@@ -1,5 +1,6 @@
 package reentry;
 
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -15,6 +16,7 @@ public class LocalConditionDemo1 {
     private Lock lock = new ReentrantLock();
     private Condition conditionA = lock.newCondition();
     private Condition conditionB = lock.newCondition();
+
     public static void main(String[] args) throws Exception {
         LocalConditionDemo1 localConditionDemo = new LocalConditionDemo1();
         new Thread(()->localConditionDemo.await(localConditionDemo.conditionA),"thread1_conditionA").start();

@@ -1,9 +1,6 @@
 package Lock;
 
 /**
- * @Description: $description$
- * @Param: $params$
- * @return: $returns$
  * @Author: daihong
  * @Date: $date$
  */
