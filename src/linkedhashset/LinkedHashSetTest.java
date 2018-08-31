@@ -18,4 +18,9 @@ public class LinkedHashSetTest {
         lhs.add("efg");
         System.out.println(lhs);
     }
+    /**
+     * [abc, efg, hij]
+     * [abc, hij, efg]
+     * 显示结果是链表向前移动一步
+     */
 }
